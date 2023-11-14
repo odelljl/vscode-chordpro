@@ -10,7 +10,10 @@
 
 ### Added
 
-- _to be defined_
+- adds syntax highlighting of Verse abbreviations `sov` and `eov`
+- adds syntax highlighting of Grid abbreviation `sog` and `eog`
+- adds syntax highlighting of Bridge : `start_of_bridge|sob` and `end_of_bridge|eob`
+- adds syntax highlighting of `start_of_*` and `end_of_*` to support highlighting of custom sections
 
 ## [0.2.0] - 2018-04-10
 

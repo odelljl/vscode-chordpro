@@ -1,4 +1,4 @@
-#------------------------------------------------------------------------------+
+q#------------------------------------------------------------------------------+
 #   This is a ChordPro language test file holding all its existing keywords   -+
 #                          https://www.chordpro.org/                          -+
 #------------------------------------------------------------------------------+
@@ -111,10 +111,19 @@
 # as song lines in a verse, but it may be advantageous to explicitly specify it.
 # This directive may include an optional label, to be printed
 # in the left margin.
-{start_of_verse} {start_of_verse: Verse 1}
+{start_of_verse} {start_of_verse: Verse 1} {sov: Verse 1}
 
 # Specifies the end of the verse.
-{end_of_verse}
+{end_of_verse}{eov}
+
+# This directive indicates that the lines that follow form the song's bridge.
+# These lines are normal song lines, but will be shown in an outstanding manner.
+# This directive may include an optional label, to identify the bridge.
+{start_of_bridge: Bridge 2} {sob: Bridge 2}
+{start_of_bridge} {sob}
+
+# This directive indicates the end of the bridge.
+{end_of_bridge} {eob}
 
 # This directive indicates that the lines that follow form a section of guitar
 # TAB instructions. This directive may include an optional label, to be printed

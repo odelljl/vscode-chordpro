@@ -61,7 +61,7 @@
         },
         {
           "name": "constant.regexp",
-          "match": "{((start_of_verse)(:([^{}]*))?|end_of_verse)}"
+          "match": "{((start_of_verse|sov)(:([^{}]*))?|end_of_verse|eov)}"
         },
         {
           "name": "entity.name.function",
@@ -69,7 +69,15 @@
         },
         {
           "name": "entity.name.function",
-          "match": "{((start_of_grid)((:|\\s)([^{}]*))?|end_of_grid)}"
+          "match": "{((start_of_grid|sog)((:|\\s)([^{}]*))?|end_of_grid|eog)}"
+        },
+        {
+          "name": "entity.name.function",
+          "match": "{((start_of_bridge|sob)((:|\\s)([^{}]*))?|end_of_bridge|eob)}"
+        },
+        {
+          "name": "entity.name.function",
+          "match": "{((start_of_.*)((:|\\s)([^{}]*))?|end_of_.*)}"
         }
       ]
     },
